@@ -144,7 +144,7 @@ public static void promptUser(){
         System.out.println("Rolling the dice...");
         System.out.println("The first dice rolled a " + getRandomInt(1, noOfSides));
         System.out.println("The second dice rolled a " + getRandomInt(1, noOfSides));
-System.out.println("Would you like to roll again? (enter yes or no)");
+        System.out.println("Would you like to roll again? (enter yes or no)");
         Scanner sc = new Scanner(System.in);
         String continueMessage = sc.nextLine();
         if (continueMessage.equalsIgnoreCase("yes")){
@@ -153,6 +153,8 @@ System.out.println("Would you like to roll again? (enter yes or no)");
             System.out.println("Thanks for playing");
         }
     }
+
+
 
 
 
