@@ -22,7 +22,7 @@ public class Dish {
     boolean wouldRecommend;
 
     public void printSummary() {
-        System.out.printf("Cost: %d %nName: %s %nRecommended: %b", costInCents, nameOfDish, wouldRecommend);
+        System.out.printf("Cost: %d %nName: %s %nRecommended: %b\n", costInCents, nameOfDish, wouldRecommend);
 
 
     }

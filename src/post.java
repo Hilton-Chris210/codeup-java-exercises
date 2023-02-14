@@ -37,6 +37,8 @@ public class post {
         System.out.println(post1.created_at);
         System.out.println(post1.updated_at);
         System.out.println(post1);
+
+
     }
 
 
