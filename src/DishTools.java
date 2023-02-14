@@ -22,8 +22,8 @@ public class DishTools {
             dish.wouldRecommend = true;
         }
     }
-
 }
+
 /*
     Create a class of static members (variables and methods) called DishTools
           - AVERAGE_COST_OF_DISH_IN_CENTS - an integer constant set to 1300
