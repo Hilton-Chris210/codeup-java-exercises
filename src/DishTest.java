@@ -1,18 +1,18 @@
 public class DishTest {
 
     public static void main(String[] args) {
-        Dish dish1 = new Dish();
-        dish1.costInCents = 1000;
-        dish1.nameOfDish = "Pizza";
-        dish1.wouldRecommend = true;
+        Dish dish1 = new Dish(100, "pizza", true);
         dish1.printSummary();
 
-
-        Dish dish2 = new Dish();
-        dish2.costInCents = 500;
-        dish2.nameOfDish = "Salad";
-        dish2.wouldRecommend = true;
+        Dish dish2 = new Dish(200, "burger", false);
         dish2.printSummary();
+
+        Dish dish3 = new Dish(300, "fries", true);
+        dish3.printSummary();
+
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish2);
+        DishTools.shoutDishName(dish3);
 
 
 
