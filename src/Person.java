@@ -1,23 +1,52 @@
 public class Person {
-    private String name;
-    public String getName(){
-        return name;
+
+
+    // variables
+    private String nameOfPerson;
+    private int ageOfPerson;
+
+
+    public Person(String nameOfPerson, int ageOfPerson) {
+        this.nameOfPerson = nameOfPerson;
+        this.ageOfPerson = ageOfPerson;
     }
-    public void setName(String name){
-        this.name = name;
+
+
+    //getters and setters
+
+    public String getNameOfPerson() {
+        return nameOfPerson;
     }
-    public void sayHello(){
-        System.out.println("Hello " + name);
+
+    public void setNameOfPerson(String nameOfPerson) {
+        this.nameOfPerson = nameOfPerson;
     }
-    public Person(String name){
-        this.name = name;
+
+    public int getAgeOfPerson() {
+        return ageOfPerson;
+    }
+
+    public void setAgeOfPerson(int ageOfPerson) {
+        this.ageOfPerson = ageOfPerson;
+    }
+
+    public void printSummary() {
+        System.out.printf("name: %s %nAge: %d %n", nameOfPerson, ageOfPerson);
     }
     public static void main(String[] args) {
-        Person person1 = new Person("Chris");
-        System.out.println(person1.getName());
-        person1.sayHello();
-        Person person2 = new Person("Brandon");
-        System.out.println(person2.getName());
-        person2.sayHello();
+        Person person1 = new Person("chris", 34);
+        Person person2 = new Person("brandon", 36);
+
+
+        person1.printSummary();
+        person2.printSummary();
+
+
+        System.out.println(person2.getAgeOfPerson());
+
+
+
     }
+
 }
+

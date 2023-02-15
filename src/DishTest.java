@@ -8,11 +8,14 @@ public class DishTest {
         dish2.printSummary();
 
         Dish dish3 = new Dish(300, "fries", true);
-        dish3.printSummary();
+
+
+
 
         DishTools.analyzeDishCost(dish1);
         DishTools.flipRecommendation(dish2);
         DishTools.shoutDishName(dish3);
+        dish3.printSummary();
 
 
 
