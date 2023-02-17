@@ -3,9 +3,9 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-    public String getString() {
+    public static String getString() {
         return scanner.nextLine();
     }
     public Boolean yesNo() {
@@ -16,7 +16,7 @@ public class Input {
             return false;
         }
     }
-    public int getInt(int min, int max) {
+    public static int getInt(int min, int max) {
         int input = scanner.nextInt();
         if (input < min || input > max) {
             System.out.println("Please enter a number between " + min + " and " + max);

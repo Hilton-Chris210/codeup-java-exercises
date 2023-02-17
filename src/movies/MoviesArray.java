@@ -105,4 +105,30 @@ public class MoviesArray {
             new Movie("Yankee Doodle Dandy", "musical")
         };
     }
+
+    public static Movie[] categories(String category) {
+        Movie[] allMovies = findAll();
+        Movie[] categoryMovies = new Movie[allMovies.length];
+        int index = 0;
+        for (Movie movie : allMovies) {
+            if (movie.getCategory().equals(category)) {
+                categoryMovies[index] = movie;
+                index++;
+            }
+        }
+        return categoryMovies;
+    }
+    public static Movie[] searchedMovieTitle(String name) {
+        Movie[] allMovies = findAll();
+        Movie[] titleMovies = new Movie[allMovies.length];
+        int index = 0;
+        for (Movie movie : allMovies) {
+            if (movie.getName().equals(name)) {
+                titleMovies[index] = movie;
+                index++;
+            }
+        }
+        return titleMovies;
+    }
+
 }
