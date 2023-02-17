@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Person {
 
 
@@ -33,6 +35,16 @@ public class Person {
     public void printSummary() {
         System.out.printf("name: %s %nAge: %d %n", nameOfPerson, ageOfPerson);
     }
+
+
+    public static Person[] addPerson(Person[] people, Person person){
+        //add a person to a new array that holds all the people from the new array
+        Person[] newPeopleArray = Arrays.copyOf(people, people.length + 1);
+        newPeopleArray[newPeopleArray.length - 1] = person;
+        return newPeopleArray;
+    }
+
+
     public static void main(String[] args) {
         Person person1 = new Person("chris", 34);
         Person person2 = new Person("brandon", 36);
